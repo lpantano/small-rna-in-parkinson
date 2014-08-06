@@ -1,0 +1,28 @@
+70KBTAAXX_1_2_1.clean.fastq.ad.fa.s	pc1	Control preclinic
+70KBTAAXX_1_9_1.clean.fastq.ad.fa.s	pc2	Control preclinic
+70KBTAAXX_2_2_1.clean.fastq.ad.fa.s	pc3	Control preclinic
+70KBTAAXX_2_9_1.clean.fastq.ad.fa.s	pc4	Control preclinic
+70KBTAAXX_3_4_1.clean.fastq.ad.fa.s	pc5	Control preclinic
+70KBTAAXX_3_7_1.clean.fastq.ad.fa.s	pc6	Control preclinic
+70KBTAAXX_8_4_1.clean.fastq.ad.fa.s	pc7	Control preclinic
+70KBTAAXX_4_2_1.clean.fastq.ad.fa.s	pt1	preclinic
+70KBTAAXX_4_9_1.clean.fastq.ad.fa.s	pt2	preclinic	
+70KBTAAXX_6_2_1.clean.fastq.ad.fa.s	pt3	preclinic
+70KBTAAXX_6_9_1.clean.fastq.ad.fa.s	pt4	preclinic
+70KBTAAXX_7_4_1.clean.fastq.ad.fa.s	pt5	preclinic
+70KBTAAXX_7_7_1.clean.fastq.ad.fa.s	pt6	preclinic
+70KBTAAXX_8_7_1.clean.fastq.ad.fa.s	pt7	preclinic
+lane1_sequence.txt_1_1.clean.fastq.ad.fa.s	cc1	Control clinic
+lane1_sequence.txt_2_1.clean.fastq.ad.fa.s	cc2	Control clinic
+lane2_sequence.txt_1_1.clean.fastq.ad.fa.s	cc3	Control clinic
+lane2_sequence.txt_2_1.clean.fastq.ad.fa.s	cc4	Control clinic
+lane3_sequence.txt_3_1.clean.fastq.ad.fa.s	cc5	Control clinic
+lane3_sequence.txt_4_1.clean.fastq.ad.fa.s	cc6	Control clinic
+lane8_sequence.txt_3_1.clean.fastq.ad.fa.s	cc7	Control clinic
+lane4_sequence.txt_1_1.clean.fastq.ad.fa.s	ct1	Clinic
+lane4_sequence.txt_2_1.clean.fastq.ad.fa.s	ct2	Clinic
+lane6_sequence.txt_1_1.clean.fastq.ad.fa.s	ct3	Clinic
+lane6_sequence.txt_2_1.clean.fastq.ad.fa.s	ct4	Clinic
+lane7_sequence.txt_3_1.clean.fastq.ad.fa.s	ct5	Clinic
+lane7_sequence.txt_4_1.clean.fastq.ad.fa.s	ct6	Clinic
+lane8_sequence.txt_4_1.clean.fastq.ad.fa.s	ct7	Clinic

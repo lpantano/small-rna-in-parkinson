@@ -1,0 +1,152 @@
+---
+title: "compare_trna_counts.rmd"
+author: "Lorena Pantano"
+date: "08/15/2014"
+output: html_document
+---
+
+
+```{r setup}
+library(knitr)
+library(rmarkdown)
+library(knitrBootstrap)
+library(ggplot2)
+library(reshape)
+library(plyr)
+library(edgeR)
+library(CHBUtils)
+library(devtools)
+library(DESeq2)
+devtools::load_all("~/repos/isomiRs")
+opts_chunk$set(tidy=TRUE, highlight=T, figalign="center",
+ fig.height=6, fig.width=6, message=F, error=F, warning=F, bootstrap.show.code=FALSE)
+```
+
+
+```{r load-seqcluster}
+sc_tab <- read.table("fasta/res_summer2014/counts.tsv",sep="\t",header=T)
+head(sc_tab)
+```
+
+```{r load-srnabench}
+list.dirs <- function(path=".", pattern=NULL, all.dirs=FALSE,
+  full.names=FALSE, ignore.case=FALSE)
+{
+  all <- list.files(path, pattern, all.dirs,
+                    full.names, recursive=FALSE, ignore.case)
+  all[file.info(dir(path,full.names=T))$isdir]
+}
+
+get_counts <- function(col)
+{
+    bench_tab <- data.frame(name="1")
+    for (f in list.dirs("miranalyzer_output/")){
+        print(f)
+        c<-read.table(paste0("miranalyzer_output/",f,"/out/hg19-tRNAs_sense.grouped"),header=T,sep="\t")
+        names(c)[col]<-f
+        bench_tab<-merge(bench_tab,c[,c(1,col)],by=1,all=T)
+        }
+    bench_tab <- bench_tab[2:nrow(bench_tab),]
+    row.names(bench_tab)<-bench_tab$name
+    bench_tab<-bench_tab[,2:ncol(bench_tab)]
+    bench_tab[is.na(bench_tab)] <- 0
+    bench_tab
+}
+unique <- get_counts(2)
+multi <- get_counts(3)
+
+```
+
+
+```{r counts}
+
+sc_counts<-sc_tab
+sc_counts<-sc_counts[,3:ncol(sc_counts)]
+sc_counts<-sc_counts[,sort(names(sc_counts))]
+
+get_size_factor<-function(counts, cols)
+{
+    counts <- counts[,cols]
+    counts<-counts[rowSums(counts==0)<5,]
+    d<-data.frame(g=gsub("[0-9]+","",names(counts)), b=1)
+    row.names(d)<-names(counts)
+    dse <- DESeqDataSetFromMatrix(countData = counts, 
+                                     colData = d, design = ~g)
+    dse<-estimateSizeFactors(dse)
+    sizeFactors(dse)
+}
+
+
+rlog_counts<-function(counts, cols, size)
+{
+    counts <- counts[,cols]
+    counts<-counts[rowSums(counts==0)<5,]
+    d<-data.frame(g=gsub("[0-9]+","",names(counts)), b=1)
+    row.names(d)<-names(counts)
+    dse <- DESeqDataSetFromMatrix(countData = counts, 
+                                  colData = d, design = ~g)
+    sizeFactors(dse) <- size
+    rlogTransformation(dse)
+}
+
+cc_size <- get_size_factor(sc_counts, 1:14)
+pc_size <- get_size_factor(sc_counts, 15:28)
+cc_trna_unique_rlog <- rlog_counts(unique, 1:14, cc_size)
+pc_trna_unique_rlog <- rlog_counts(unique, 15:28, pc_size)
+cc_trna_multi_rlog <- rlog_counts(multi, 1:14, cc_size)
+pc_trna_multi_rlog <- rlog_counts(multi, 15:28, pc_size)
+write.table(assay(cc_trna_unique_rlog),"miranalyzer_output/trna-counts-uniq-cc.tsv",sep="\t")
+write.table(assay(pc_trna_unique_rlog),"miranalyzer_output/trna-counts-uniq-pc.tsv",sep="\t")
+write.table(assay(cc_trna_multi_rlog),"miranalyzer_output/trna-counts-multi-cc.tsv",sep="\t")
+write.table(assay(pc_trna_multi_rlog),"miranalyzer_output/trna-counts-multi-pc.tsv",sep="\t")
+
+```
+
+
+
+```{r plsda-bench}
+counts<-setClass("DataSeq",
+slots=c(counts="matrix",
+normcounts="matrix",
+design="data.frame"
+))
+
+
+do_pls<-function(counts)
+{
+    obj<-counts()
+    obj@normcounts<-as.matrix(assay(counts))
+    obj@design<-data.frame(g=gsub("[0-9]+","",colnames(obj@normcounts)), b=1)
+    pls <- isoPLSDA(obj,"g",nperm = 400)    
+    pls
+}
+cc_bench_unique <- do_pls(cc_trna_unique_rlog)
+cc_bench_multi <- do_pls(cc_trna_multi_rlog)
+pc_bench_unique <- do_pls(pc_trna_unique_rlog)
+pc_bench_multi <- do_pls(pc_trna_multi_rlog)
+
+#isoPLSDAplot(pls$components, groups = d$g)
+
+
+```
+
+
+```{r plsda-seqcluster}
+counts<-setClass("DataSeq",
+slots=c(counts="matrix",
+normcounts="matrix",
+design="data.frame"
+))
+
+
+sc_trna<-subset(sc_tab, grepl("tRNA",ann))
+sc_trna<-sc_trna[,3:ncol(sc_trna)]
+sc_trna<-sc_trna[,sort(names(sc_trna))]
+sc_cc_trna_unique_rlog <- rlog_counts(sc_trna, 1:14, cc_size)
+sc_pc_trna_unique_rlog <- rlog_counts(sc_trna, 15:28, pc_size)
+
+sc_pls_cc <- do_pls(sc_cc_trna_unique_rlog)
+sc_pls_pc <- do_pls(sc_pc_trna_unique_rlog)
+
+isoPLSDAplot(sc_pls_pc$components, groups = d$g)
+```

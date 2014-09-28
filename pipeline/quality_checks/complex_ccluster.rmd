@@ -1,0 +1,26 @@
+# Redundancy
+
+```{r cluster-divided}
+library(dplyr)
+d<-read.table("~/repos/small-RNA-analysis/fasta/res_test/trace.log",fill = TRUE,
+              sep= " ", header = F)
+d <- d[grepl("NOTE",d$V1),1:6]
+names(d) <- c("level","sep","ori","final","idl","len")
+d.red <- summarise(group_by(d,ori,final))
+
+d.red.ori <- summarise(group_by(d.red,ori),final=n())
+table(d.red.ori$final)
+head(subset(d.red.ori,final==2))
+subset(d,ori==109)
+```
+
+```{r cluster-divided}
+d<-read.table("~/repos/small-RNA-analysis/fasta/res_test_explore_97-98/map.tsv")
+head(d)
+library(ggplot2)
+d$y<-as.numeric(d$V1)
+ggplot(d)+
+    geom_segment(aes(x=V5,xend=V6,y=y,yend=y,color=V2))+
+    facet_wrap(~V3)
+```
+

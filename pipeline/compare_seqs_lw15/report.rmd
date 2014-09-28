@@ -1,0 +1,23 @@
+Set path to small-rna-analysis
+
+```{r load}
+d<-read.table("adapter_removal/prepare/stats.tsv",sep="\t",header=T)
+head(d)
+mean.mapped<-colMeans(d[,4:ncol(d)])
+sum.mapped<-colSums(d[,4:ncol(d)])
+
+tot<-read.table("fasta/define.cluster.Dec/res/ann.tab",header=T,sep="\t")
+mean.tot<-colMeans(tot[grepl("tRNA",tot$ann),3:30])
+sum.tot<-colSums(tot[grepl("tRNA",tot$ann),3:30])
+```
+
+
+```{r plot}
+plot(sum.mapped/tot.counts, type='h',
+     xlab="samples", ylab="excluded/included seqs")
+```
+
+```{r average}
+hist(mean.mapped)
+hist(mean.tot)
+```

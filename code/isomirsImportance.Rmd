@@ -1,0 +1,40 @@
+Importance of isomirs
+========================================================
+
+
+```{r}
+library(data.table)
+d<-read.table("../tables/DEseq.miraligner.isomir.ptvspc.txt",sep="\t",header=T)
+m1<-apply(d[,10:16],1,mean)
+m2<-apply(d[,17:23],1,mean)
+value<-apply(cbind(m1,m2),1,min)
+labels<-sapply(as.character(unlist(d[,2])),function(x){
+  c<-unlist(strsplit(x,","))
+  idx<-which(c!=0)
+  lab<-"ref"
+  if (length(idx)>0){
+   type<-c("mut","add","t5","t3")
+   lab<-paste0(type[idx],collapse="")
+  }
+  return(lab)
+})
+
+tab<-data.frame(mir=d[,1],var=labels,exp=value,seq=1:nrow(d))
+tab$id<-paste0(tab$mir,tab$var)
+
+tab.s<-ddply(tab,~id,summarise,total=sum(exp))
+all<-merge(tab[,c(5,4,3,1)],tab.s,all=T)
+all$r<-round(all$exp/all$total*100)
+
+t<-cbind(d[all$seq,1:9],all)
+tf<-head(t[order(t$pvalue),],85)
+tf$FC<-cut(tf$log2FoldChange,breaks=c(-1000,0,1000),
+           labels=c("DOWN","UP"))
+tf.s<-ddply(tf,~mir,summarise,FC=paste0(FC,collapse=" "),
+            ratio=paste0(paste(r,"%",sep=""),collapse=" "))
+write.table(tf.s,"../tables/isomir.importance.ptvspc.txt",sep="\t",quote=F,row.names=F)
+
+
+```
+
+

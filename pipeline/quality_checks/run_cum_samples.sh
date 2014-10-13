@@ -7,10 +7,11 @@ set -x
 export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 GENOME="/home/lpantano/projects/index/ody_copy/hg19"
 
-for NS in 4 8 12 16 20 24 28 ; do
+for NS in 4 7 12 14 20 21 28 ; do
     echo "running $NS samples"
     head -$NS config > tmp_config
     OUT="subsample$NS"
+    rm -rf $OUT
     mkdir -p  $OUT/res
     seqcluster prepare -c tmp_config -o $OUT
     bowtie -a --best --strata -m 5000 -f $GENOME $OUT/seqs.fa -S  $OUT/seqs.sam

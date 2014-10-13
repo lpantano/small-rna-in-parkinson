@@ -15,12 +15,24 @@ subset(d,ori==109)
 ```
 
 ```{r cluster-divided}
-d<-read.table("~/repos/small-RNA-analysis/fasta/res_test_explore_97-98/map.tsv")
+d<-read.table("~/repos/small-RNA-analysis/fasta/res_test_explore_113-114/map.tsv")
 head(d)
 library(ggplot2)
-d$y<-as.numeric(d$V1)
+d$y<-as.numeric(as.factor(unlist(gsub(".+-","",as.character(d$V1)))))
 ggplot(d)+
     geom_segment(aes(x=V5,xend=V6,y=y,yend=y,color=V2))+
-    facet_wrap(~V3)
+    facet_wrap(~V3) 
+
+d$share <- "unique"
+share <- as.character(subset(summarise(group_by(d, "V1"),map=paste(V3, collapse=",")), grepl("20711",map) & grepl(",",map))[,1])
+d[d$V1 %in% share,"share"] <- "shared"
+
+ggplot(d)+
+    geom_segment(aes(x=V5,xend=V6,y=y,yend=y,color=share))+
+    facet_wrap(~V3) 
+
 ```
 
+Some sequences are reported as c97 even when it maps only to c98 according bowtie2. 
+That is due to fails of bowtie1 to report a hit in this locu. As well, here I am
+using only these three loci as index for bowtie2, so the sensibility is higher.

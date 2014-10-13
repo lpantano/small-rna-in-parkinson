@@ -23,7 +23,7 @@ get_accuracy<-function(hr,c,t){
  return(a)
 }
 
-config<-read.table("config.2",sep="\t")
+config<-read.table("../../fasta/config",sep="\t")
 table<-data.frame(mir="hsa")
 #for (a in  list.files(".",pattern="mirna.out.f")){
 for (a in 1:nrow(config)) {

@@ -4,13 +4,14 @@ set -e
 
 MIRA="/home/lpantano/soft/srnabench/sRNAbench.jar"
 
-OPATH=miranalyzer_output
+OPATH=miranalyzer_output_trimmed
 CONFIG=$1
 DB=~/soft/srnabench-db/sRNAbenchDB
 BPATH=/home/lpantano/soft/bowtie-1.0.1
 TLIBS=hsa_tRNA
 
 mkdir -p $OPATH
+cd $OPATH
 
 while read line; do
 
@@ -21,16 +22,15 @@ while read line; do
 
  INPUT=$NAME.rc
 
- cd $OPATH
  mkdir -p $NAME
  cd $NAME
  #create rc count
  INPUT=input.rc 
- sed 's/_x/\t/' ../../fasta/$INPUTFASTA | awk '{if ($0~/>/){counts=$2}else{print $0"\t"counts}}' > $INPUT
+ sed 's/_x/\t/' ../../fasta/trimmed/$INPUTFASTA.trimmed.fa | awk '{if ($0~/>/){counts=$2}else{print $0"\t"counts}}' > $INPUT
 
  #run MIRA
  java -jar $MIRA dbPath=$DB microRNA=hsa input=$INPUT  output=out maxReadLength=40 isoMiR=true libs=hg19-tRNAs.fa,hsa_Rfam.fa
 
- cd ../..
+ cd ..
 
 done < $CONFIG

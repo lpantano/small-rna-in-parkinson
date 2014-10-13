@@ -24,7 +24,7 @@ opts_chunk$set(tidy=TRUE, highlight=T, figalign="center",
 
 
 ```{r load-seqcluster}
-sc_tab <- read.table("fasta/res_summer2014/counts.tsv",sep="\t",header=T)
+sc_tab <- read.table("fasta/prepare_18_35_10/res/counts.tsv",sep="\t",header=T)
 head(sc_tab)
 ```
 
@@ -40,9 +40,9 @@ list.dirs <- function(path=".", pattern=NULL, all.dirs=FALSE,
 get_counts <- function(col)
 {
     bench_tab <- data.frame(name="1")
-    for (f in list.dirs("miranalyzer_output/")){
+    for (f in list.dirs("miranalyzer_output_trimmed/")){
         print(f)
-        c<-read.table(paste0("miranalyzer_output/",f,"/out/hg19-tRNAs_sense.grouped"),header=T,sep="\t")
+        c<-read.table(paste0("miranalyzer_output_trimmed/",f,"/out/hg19-tRNAs_sense.grouped"),header=T,sep="\t")
         names(c)[col]<-f
         bench_tab<-merge(bench_tab,c[,c(1,col)],by=1,all=T)
         }
@@ -95,10 +95,10 @@ cc_trna_unique_rlog <- rlog_counts(unique, 1:14, cc_size)
 pc_trna_unique_rlog <- rlog_counts(unique, 15:28, pc_size)
 cc_trna_multi_rlog <- rlog_counts(multi, 1:14, cc_size)
 pc_trna_multi_rlog <- rlog_counts(multi, 15:28, pc_size)
-write.table(assay(cc_trna_unique_rlog),"miranalyzer_output/trna-counts-uniq-cc.tsv",sep="\t")
-write.table(assay(pc_trna_unique_rlog),"miranalyzer_output/trna-counts-uniq-pc.tsv",sep="\t")
-write.table(assay(cc_trna_multi_rlog),"miranalyzer_output/trna-counts-multi-cc.tsv",sep="\t")
-write.table(assay(pc_trna_multi_rlog),"miranalyzer_output/trna-counts-multi-pc.tsv",sep="\t")
+write.table(assay(cc_trna_unique_rlog),"miranalyzer_output_trimmed/trna-counts-uniq-cc.tsv",sep="\t")
+write.table(assay(pc_trna_unique_rlog),"miranalyzer_output_trimmed/trna-counts-uniq-pc.tsv",sep="\t")
+write.table(assay(cc_trna_multi_rlog),"miranalyzer_output_trimmed/trna-counts-multi-cc.tsv",sep="\t")
+write.table(assay(pc_trna_multi_rlog),"miranalyzer_output_trimmed/trna-counts-multi-pc.tsv",sep="\t")
 
 ```
 

@@ -2,22 +2,22 @@ Set path to small-rna-analysis
 
 ```{r load}
 d<-read.table("adapter_removal/prepare/stats.tsv",sep="\t",header=T)
-head(d)
 mean.mapped<-colMeans(d[,4:ncol(d)])
 sum.mapped<-colSums(d[,4:ncol(d)])
 
-tot<-read.table("fasta/define.cluster.Dec/res/ann.tab",header=T,sep="\t")
-mean.tot<-colMeans(tot[grepl("tRNA",tot$ann),3:30])
-sum.tot<-colSums(tot[grepl("tRNA",tot$ann),3:30])
+tot<-read.table("work/define.cluster.Dec/res/ann.tab",header=T,sep="\t")
+mean.tot<-colMeans(tot[,3:30])
+sum.tot<-colSums(tot[,3:30])
 ```
 
-
+Plot the percentage of excluded sequences smaller than 17 nt.
 ```{r plot}
-plot(sum.mapped/tot.counts, type='h',
+plot(sum.mapped/sum.tot, type='h',
      xlab="samples", ylab="excluded/included seqs")
 ```
 
+Average expression of the two sets
 ```{r average}
-hist(mean.mapped)
-hist(mean.tot)
+hist(mean.mapped, main="sequences < 17 nt")
+hist(mean.tot, main="sequences > 17 nt")
 ```

@@ -3,16 +3,21 @@ d<-read.table("comparative_trna_genome_mature/difference_genomic_mature.tsv",
               sep="\t", header=T)
 exp_map_mature<-colSums(d[ d$detected==1,5:32])
 
-tot<-read.table("work/define.cluster.Dec/res/ann.tab",header=T,sep="\t")
-tot.counts<-colSums(tot[grepl("tRNA",tot$ann),3:30])
+seqcluster<-read.table("work/define.cluster.Dec/res/ann.tab",header=T,sep="\t")
+seqclsuter.counts<-colSums(tot[grepl("tRNA",tot$ann),3:30])
 
 ```
 
 Ratio of annotated sequences using the tRNA post-processed sequences agains 
 the genome.
 
-```{r ratio}
-mean(exp_map_mature)/mean(tot.counts)*100
+```{r ratio-exp}
+mean(exp_map_mature)/mean(seqclsuter.counts)*100
 ```
 
 
+Ratio of number of annotated sequences
+
+```{r ratio-seq}
+mean(rowSums(d[ d$detected==1,5:32]>1))/mean(rowSums(seqclsuter[,3:(3+27)]>1))*100
+```

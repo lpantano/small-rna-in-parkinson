@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from collections import defaultdict
 import os, shutil
-from seqcluster import map_to_precursors
+from seqcluster.libs.read import map_to_precursors
 
 
 def get_cluster(in_file, keep):
@@ -17,9 +17,9 @@ def get_cluster(in_file, keep):
                 loci = []
                 cluster_name = line.strip().split(" ")[1]
             if line.startswith("L "):
-                loci = line.strip().split(" ")[2:]
+                loci = [keep] + line.strip().split(" ")[2:]
             if line.startswith("S "):
-                s, f = line.strip().split(" ")[1:2]
+                s, f = line.strip().split(" ")[1:]
                 seqs[s] = f
 
 
@@ -31,6 +31,7 @@ if __name__ == "__main__":
     parser.add_argument("--out", help="output file.")
 
     args = parser.parse_args()
+    os.mkdir(args.out)
 
     seqs, loci = get_cluster(args.json, args.keep)
-    map_to_precursors(seqs.keys(), seqs.values(), {args.keep: loci}, args)
+    map_to_precursors(seqs.keys(), seqs.values(), {args.keep: [loci]}, args)

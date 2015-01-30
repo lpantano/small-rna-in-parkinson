@@ -207,12 +207,12 @@ do_de_heatmap = function(table,ini,end,con,treat,name){
     res.dt<-res.dt[!is.na(res.dt$padj),]
     #pdf(paste("heatmap.res/",unique(design[,1])[2],"vs",unique(design[,1])[1],sep="",
     #          ".pvalue.clu.pdf"))
-    hist(res.dt$pvalue,main="pvalue distribution")
+    #hist(res.dt$pvalue,main="pvalue distribution")
     #dev.off()
     
     #head(res.dt[order(res.dt$pvalue),],13)
-    q<-qvalue(res.dt$pvalue[!is.na(res.dt$pvalue)],
-              fdr.level=0.3)
+    #q<-qvalue(res.dt$pvalue[!is.na(res.dt$pvalue)],
+    #          fdr.level=0.3)
     #summary(q)
     rld <- rlogTransformation(dds, blind=TRUE)
     #save(rld,file=paste(treat,"vs",con,".rld",sep="\t"))
@@ -229,12 +229,12 @@ do_de_heatmap = function(table,ini,end,con,treat,name){
         par(mar=c(3,5,5,2),cex=.5)
         #pdf(paste("heatmap.res/",unique(design[,1])[2],"vs",unique(design[,1])[1],sep="",
         #          ".top",lim,".",name,".pdf"))
-        heatmap.2(assay(rld)[select,], col = hmcol,
-                  Colv=as.dendrogram(hr), Rowv=as.dendrogram(hc),
-                  scale="row",
-                  dendrogram="col", trace="none",cexRow=.7,
-                  ColSideColors=c(rep("gray",7),rep("yellow",7)),
-                  ,margins=c(7,7),keysize=1.5,main=paste("top: ",lim))
+        #p<-heatmap.2(assay(rld)[select,], col = hmcol,
+        #          Colv=as.dendrogram(hr), Rowv=as.dendrogram(hc),
+        #          scale="row",
+        #          dendrogram="col", trace="none",cexRow=.7,
+        #          ColSideColors=c(rep("gray",7),rep("yellow",7)),
+        #          ,margins=c(7,7),keysize=1.5,main=paste("top: ",lim))
         #dev.off()
         acc<-get_accuracy(hr,con,treat)
         if (acc>=max.acc){
@@ -249,7 +249,7 @@ do_de_heatmap = function(table,ini,end,con,treat,name){
 }
 
 
-do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat){
+do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat, name){
     #permutation of micros but same DE: 22 87%
     acc<-vector()
     for (perm in 1:400){
@@ -260,13 +260,13 @@ do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat){
         }
     pval=sum(acc>=realvalue)/401
     d<-density(acc,bw=0.1)
-    #pdf(paste("heatmap.res/",unique(design[,1])[2],"vs",unique(design[,1])[1],sep="",
-    #          ".signif.random.",name,".pdf"))
+    pdf(paste("miranalyzer/",name,treat,"vs",con,sep="",
+              ".signif.random.",name,".pdf"))
     plot(d, main="density random score",xlab="clustering scores",xlim=c(0,1.1))
     polygon(d, col="steelblue", border="blue")
     abline(v=realvalue,col="red",lwd=2)
     text(1,3,labels=paste("p-value:",round(pval,digits=2)),cex=0.7)
-    #dev.off()
+    dev.off()
     
 }
 
@@ -274,18 +274,18 @@ do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat){
 
 ```{r deg_bench_comp}
 deg_res = do_de_heatmap(multi,1,14,"cc","ct","multi_ct")
-do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"cc","ct")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"cc","ct","multi_")
 
 
-deg_res = do_de_heatmap(multi,15,28,"pc","pt","unique_pt")
-do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt")
+deg_res = do_de_heatmap(multi,15,28,"pc","pt","multi_pt")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt","multi_")
 
 
 deg_res = do_de_heatmap(unique,1,14,"cc","ct","unique_ct")
-do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"cc","ct")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"cc","ct","uniqeu_")
 
 deg_res = do_de_heatmap(unique,15,28,"pc","pt","unique_pt")
-do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt","unique_")
 
 ```
 

@@ -1,0 +1,37 @@
+```{r load}
+c382 = read.table("cluster_profile/c382/map.tsv")
+c383 = read.table("cluster_profile/c383/map.tsv")
+c384 = read.table("cluster_profile/c384/map.tsv")
+align = read.table("cluster_profile/alignment.dat")
+dat = rbind(c384,c383,c382)
+```
+
+
+```{r convert}
+library("dplyr")
+dat_cov = apply( dat,1, function(v){
+    data.frame(x=v[5]:v[6],y=1,family=v[4])
+} )
+dat_cov = do.call(rbind,dat_cov) %>% group_by(x,family) %>% dplyr::summarise(counts=sum(y)) %>% ungroup()
+
+align = do.call(rbind, apply(align, 1, function(v){
+    nt = unlist(strsplit(v[2],split=""))
+    data.frame(nt=nt,pos=1:length(nt),family=v[1])
+}))
+```
+
+
+```{r plot}
+library(ggplot2)
+p1=ggplot(dat_cov) +
+    geom_line(aes(x=x,y=counts,color=family))+
+    scale_color_brewer(palette = "Set1")
+p2=ggplot(align %>% filter(family!="code") , aes( y=family, x=pos, fill=nt)) +
+    geom_tile() +
+    scale_fill_manual(values = c("grey","red","yellow","green","blue"))
+p3=ggplot(align %>% filter(family=="code") , aes( y=family, x=pos, fill=nt)) +
+    geom_tile() +
+    scale_fill_manual(values = c("white","orange","orange","black"),guide=FALSE)
+tracks(p1,p3,p2)
+```
+

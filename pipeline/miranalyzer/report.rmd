@@ -57,6 +57,34 @@ get_counts <- function(col)
 unique <- get_counts(2)
 multi <- get_counts(3)
 
+samples = c("cc1","cc2","cc3","cc4","cc5","cc6","cc7",
+            "ct1","ct2","ct3","ct4","ct5","ct6","ct7",
+            "pc1","pc2","pc3","pc4","pc5","pc6","pc7",
+            "pt1","pt2","pt3","pt4","pt5","pt6","pt7")
+get_counts_mirna <- function(col)
+{
+    bench_tab <- data.frame()
+    for (f in samples){
+        print(f)
+        c<-read.table(paste0("miranalyzer_output_trimmed/",f,"/out/miRBase_isoAnnotation.txt"),header=T,sep="\t",comment.char = "/")
+        #print(head(c))
+        c$sample = f
+        names(c)[col] = "counts"
+        c$read = as.character(c$read)
+        bench_tab = rbind(bench_tab,c[c[,col]>2,c(1,col,ncol(c))])
+        }
+    #print(head(bench_tab))
+    bench_tab = reshape(bench_tab,timevar="sample", idvar = "read", direction = "wide")
+    bench_tab = bench_tab[,2:ncol(bench_tab)]
+    #print(head(bench_tab))
+    bench_tab[is.na(bench_tab)] = 0
+    bench_tab
+    
+}
+
+iso <- get_counts_mirna(6)
+names(iso) = sub("counts.","",names(iso))
+
 ```
 
 
@@ -260,8 +288,8 @@ do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat, name)
         }
     pval=sum(acc>=realvalue)/401
     d<-density(acc,bw=0.1)
-    pdf(paste("miranalyzer/",name,treat,"vs",con,sep="",
-              ".signif.random.",name,".pdf"))
+    png(paste("miranalyzer/",name,treat,"vs",con,sep="",
+              ".signif.random.",name,".png"))
     plot(d, main="density random score",xlab="clustering scores",xlim=c(0,1.1))
     polygon(d, col="steelblue", border="blue")
     abline(v=realvalue,col="red",lwd=2)
@@ -271,6 +299,8 @@ do_permutation = function(realvalue, max.heatmap, res.dt, rld, con, treat, name)
 }
 
 ```
+
+## tRNA
 
 ```{r deg_bench_comp}
 deg_res = do_de_heatmap(multi,1,14,"cc","ct","multi_ct")
@@ -286,6 +316,18 @@ do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["lo
 
 deg_res = do_de_heatmap(unique,15,28,"pc","pt","unique_pt")
 do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt","unique_")
+
+```
+
+
+## isomiRs
+
+```{r deg_bench_comp_isomirs}
+deg_res = do_de_heatmap(iso,1,14,"cc","ct","isomirs")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"cc","ct","isomirs_")
+
+deg_res = do_de_heatmap(iso,15,28,"pc","pt","isomirs")
+do_permutation(deg_res[["acc"]], deg_res[["max"]], deg_res[["res"]],deg_res[["log"]],"pc","pt","isomirs_")
 
 ```
 

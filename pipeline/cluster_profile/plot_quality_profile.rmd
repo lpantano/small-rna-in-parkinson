@@ -25,13 +25,15 @@ align = do.call(rbind, apply(align, 1, function(v){
 library(ggplot2)
 p1=ggplot(dat_cov) +
     geom_line(aes(x=x,y=counts,color=family))+
-    scale_color_brewer(palette = "Set1")
+    scale_color_brewer("cluster",palette = "Set1")
 p2=ggplot(align %>% filter(family!="code") , aes( y=family, x=pos, fill=nt)) +
     geom_tile() +
+    ylab("nucleotides")+
     scale_fill_manual(values = c("grey","red","yellow","green","blue"))
-p3=ggplot(align %>% filter(family=="code") , aes( y=family, x=pos, fill=nt)) +
+p3= ggplot(align %>% filter(family=="code") , aes( y=family, x=pos, fill=nt)) +
     geom_tile() +
-    scale_fill_manual(values = c("white","orange","orange","black"),guide=FALSE)
-tracks(p1,p3,p2)
+    ylab("similarity")+
+    scale_fill_manual("code",values = c("grey","grey","orange","black"),guide=FALSE)
+tracks(p1,p3,p2,main = "similarity among clusters")
 ```
 

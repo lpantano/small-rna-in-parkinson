@@ -23,11 +23,11 @@ get_accuracy<-function(hr,c,t){
  return(a)
 }
 
-config<-read.table("../../fasta/config",sep="\t")
+config<-read.table("../../data/miRNAs/miraligner/config",sep="\t")
 table<-data.frame(mir="hsa")
 #for (a in  list.files(".",pattern="mirna.out.f")){
 for (a in 1:nrow(config)) {
-  file<-paste(config[a,1],".clean.fastq.ad.fa.mirna.out.f",sep="")
+  file<-paste(basedir(config[a,1]),".clean.fastq.ad.fa.mirna.out.f",sep="")
   d<-read.table(file,sep="\t",header=F,skip=1)
   d.f<-d[d$V14==1,c(2,3,4)]
   #d.f<-d.f[d.f$V3>=5,]  

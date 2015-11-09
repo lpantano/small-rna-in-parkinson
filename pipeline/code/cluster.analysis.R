@@ -20,12 +20,12 @@ get_accuracy<-function(hr,c,t){
 }
 
 
-table<-read.table("../fasta/define.cluster.Dec/res/ann.tab",sep="\t",header=T,row.names=1)
+table<-read.table("../define.cluster.Dec/res/ann.tab",sep="\t",header=T,row.names=1)
 ann<-table[,2]
 names(ann)<-row.names(table)
 table<-table[,2:(ncol(table)-1)]
 
-idx<-read.table("../fasta/define.cluster.Dec/res/clusters.clean2.tab",header=T,row.names=1)
+idx<-read.table("../define.cluster.Dec/res/clusters.clean2.tab",header=T,row.names=1)
 table<-table[row.names(idx),]
 
 con<-"cc"

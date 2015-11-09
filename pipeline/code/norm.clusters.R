@@ -7,13 +7,13 @@ library("gplots")
 library(gtools)
 
 
-table<-read.table("../../fasta/prepare_18_35_10/res/counts.tsv",sep="\t",header=T,row.names=1)
+table<-read.table("../../prepare_18_35_10/res/counts.tsv",sep="\t",header=T,row.names=1)
 ann<-table[,1]
 names(ann)<-row.names(table)
 table<-table[,2:(ncol(table))]
 table <- table[,mixedsort(names(table))]
 
-table<-read.table("../../fasta/define.cluster.Dec/res/ann.tab",sep="\t",header=T,row.names=1)
+table<-read.table("../../define.cluster.Dec/res/ann.tab",sep="\t",header=T,row.names=1)
 ann<-table[,1]
 names(ann)<-row.names(table)
 table<-table[,2:(ncol(table)-1)]

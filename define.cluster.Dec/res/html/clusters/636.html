@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>clusters information</title>
+<style type="text/css" title="currentStyle">
+@import "../css/info_css.css";	
+</style>
+<script type="text/javascript">
+
+function showstuff(boxid){
+   document.getElementById(boxid).style.visibility="visible";
+}
+ 
+function hidestuff(boxid){
+   document.getElementById(boxid).style.visibility="hidden";
+}
+
+</script>
+<script src="../js/Scribl.1.1.4.min.js" ></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<link href="../js/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../js/dragscrollable.js"></script> 
+		<style>
+		   #scribl-zoom-slider {
+		      width: 4px;
+		   }
+		</style>
+
+
+    <script src="../js/amcharts.js" type="text/javascript"></script>        
+    <script type="text/javascript">
+            var chart;
+
+            var allData = [{"seq_447500":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"0","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"0","color":"#FF6600"},{"sample":"cc5","reads":"0","color":"#FF6600"},{"sample":"cc6","reads":"0","color":"#FF6600"},{"sample":"cc7","reads":"10","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"0","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"0","color":"#FF6600"},{"sample":"ct5","reads":"0","color":"#FF6600"},{"sample":"ct6","reads":"0","color":"#FF6600"},{"sample":"ct7","reads":"0","color":"#FF6600"}],"seq_358957":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"22","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"39","color":"#FF6600"},{"sample":"cc5","reads":"25","color":"#FF6600"},{"sample":"cc6","reads":"12","color":"#FF6600"},{"sample":"cc7","reads":"41","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"26","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"21","color":"#FF6600"},{"sample":"ct5","reads":"21","color":"#FF6600"},{"sample":"ct6","reads":"18","color":"#FF6600"},{"sample":"ct7","reads":"15","color":"#FF6600"}],"seq_9165":[{"sample":"pc1","reads":"11","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"0","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"0","color":"#FF6600"},{"sample":"cc5","reads":"0","color":"#FF6600"},{"sample":"cc6","reads":"0","color":"#FF6600"},{"sample":"cc7","reads":"0","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"0","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"0","color":"#FF6600"},{"sample":"ct5","reads":"0","color":"#FF6600"},{"sample":"ct6","reads":"0","color":"#FF6600"},{"sample":"ct7","reads":"0","color":"#FF6600"}],"seq_457570":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"0","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"0","color":"#FF6600"},{"sample":"cc5","reads":"0","color":"#FF6600"},{"sample":"cc6","reads":"0","color":"#FF6600"},{"sample":"cc7","reads":"11","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"0","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"0","color":"#FF6600"},{"sample":"ct5","reads":"0","color":"#FF6600"},{"sample":"ct6","reads":"0","color":"#FF6600"},{"sample":"ct7","reads":"0","color":"#FF6600"}],"seq_243790":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"13","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"0","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"0","color":"#FF6600"},{"sample":"cc5","reads":"0","color":"#FF6600"},{"sample":"cc6","reads":"0","color":"#FF6600"},{"sample":"cc7","reads":"0","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"0","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"0","color":"#FF6600"},{"sample":"ct5","reads":"0","color":"#FF6600"},{"sample":"ct6","reads":"0","color":"#FF6600"},{"sample":"ct7","reads":"0","color":"#FF6600"}],"seq_4482":[{"sample":"pc1","reads":"16","color":"#FF6600"},{"sample":"pc2","reads":"11","color":"#FF6600"},{"sample":"pc3","reads":"15","color":"#FF6600"},{"sample":"pc4","reads":"14","color":"#FF6600"},{"sample":"pc5","reads":"16","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"13","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"14","color":"#FF6600"},{"sample":"pt3","reads":"18","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"10","color":"#FF6600"},{"sample":"pt7","reads":"16","color":"#FF6600"},{"sample":"cc1","reads":"23","color":"#FF6600"},{"sample":"cc2","reads":"11","color":"#FF6600"},{"sample":"cc3","reads":"13","color":"#FF6600"},{"sample":"cc4","reads":"33","color":"#FF6600"},{"sample":"cc5","reads":"17","color":"#FF6600"},{"sample":"cc6","reads":"11","color":"#FF6600"},{"sample":"cc7","reads":"0","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"17","color":"#FF6600"},{"sample":"ct3","reads":"10","color":"#FF6600"},{"sample":"ct4","reads":"12","color":"#FF6600"},{"sample":"ct5","reads":"15","color":"#FF6600"},{"sample":"ct6","reads":"0","color":"#FF6600"},{"sample":"ct7","reads":"19","color":"#FF6600"}],"seq_9171":[{"sample":"pc1","reads":"49","color":"#FF6600"},{"sample":"pc2","reads":"32","color":"#FF6600"},{"sample":"pc3","reads":"42","color":"#FF6600"},{"sample":"pc4","reads":"73","color":"#FF6600"},{"sample":"pc5","reads":"39","color":"#FF6600"},{"sample":"pc6","reads":"34","color":"#FF6600"},{"sample":"pc7","reads":"49","color":"#FF6600"},{"sample":"pt1","reads":"27","color":"#FF6600"},{"sample":"pt2","reads":"57","color":"#FF6600"},{"sample":"pt3","reads":"43","color":"#FF6600"},{"sample":"pt4","reads":"84","color":"#FF6600"},{"sample":"pt5","reads":"25","color":"#FF6600"},{"sample":"pt6","reads":"26","color":"#FF6600"},{"sample":"pt7","reads":"69","color":"#FF6600"},{"sample":"cc1","reads":"46","color":"#FF6600"},{"sample":"cc2","reads":"29","color":"#FF6600"},{"sample":"cc3","reads":"31","color":"#FF6600"},{"sample":"cc4","reads":"40","color":"#FF6600"},{"sample":"cc5","reads":"28","color":"#FF6600"},{"sample":"cc6","reads":"19","color":"#FF6600"},{"sample":"cc7","reads":"37","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"33","color":"#FF6600"},{"sample":"ct3","reads":"20","color":"#FF6600"},{"sample":"ct4","reads":"23","color":"#FF6600"},{"sample":"ct5","reads":"36","color":"#FF6600"},{"sample":"ct6","reads":"21","color":"#FF6600"},{"sample":"ct7","reads":"27","color":"#FF6600"}],"seq_64410":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"10","color":"#FF6600"},{"sample":"pc4","reads":"10","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"15","color":"#FF6600"},{"sample":"cc2","reads":"12","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"32","color":"#FF6600"},{"sample":"cc5","reads":"10","color":"#FF6600"},{"sample":"cc6","reads":"0","color":"#FF6600"},{"sample":"cc7","reads":"11","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"0","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"18","color":"#FF6600"},{"sample":"ct5","reads":"11","color":"#FF6600"},{"sample":"ct6","reads":"12","color":"#FF6600"},{"sample":"ct7","reads":"0","color":"#FF6600"}],"seq_4500":[{"sample":"pc1","reads":"97","color":"#FF6600"},{"sample":"pc2","reads":"47","color":"#FF6600"},{"sample":"pc3","reads":"103","color":"#FF6600"},{"sample":"pc4","reads":"89","color":"#FF6600"},{"sample":"pc5","reads":"70","color":"#FF6600"},{"sample":"pc6","reads":"50","color":"#FF6600"},{"sample":"pc7","reads":"63","color":"#FF6600"},{"sample":"pt1","reads":"35","color":"#FF6600"},{"sample":"pt2","reads":"73","color":"#FF6600"},{"sample":"pt3","reads":"90","color":"#FF6600"},{"sample":"pt4","reads":"93","color":"#FF6600"},{"sample":"pt5","reads":"43","color":"#FF6600"},{"sample":"pt6","reads":"48","color":"#FF6600"},{"sample":"pt7","reads":"93","color":"#FF6600"},{"sample":"cc1","reads":"89","color":"#FF6600"},{"sample":"cc2","reads":"54","color":"#FF6600"},{"sample":"cc3","reads":"67","color":"#FF6600"},{"sample":"cc4","reads":"95","color":"#FF6600"},{"sample":"cc5","reads":"67","color":"#FF6600"},{"sample":"cc6","reads":"54","color":"#FF6600"},{"sample":"cc7","reads":"62","color":"#FF6600"},{"sample":"ct1","reads":"15","color":"#FF6600"},{"sample":"ct2","reads":"78","color":"#FF6600"},{"sample":"ct3","reads":"42","color":"#FF6600"},{"sample":"ct4","reads":"45","color":"#FF6600"},{"sample":"ct5","reads":"53","color":"#FF6600"},{"sample":"ct6","reads":"47","color":"#FF6600"},{"sample":"ct7","reads":"73","color":"#FF6600"}],"seq_20380":[{"sample":"pc1","reads":"55","color":"#FF6600"},{"sample":"pc2","reads":"27","color":"#FF6600"},{"sample":"pc3","reads":"57","color":"#FF6600"},{"sample":"pc4","reads":"51","color":"#FF6600"},{"sample":"pc5","reads":"43","color":"#FF6600"},{"sample":"pc6","reads":"24","color":"#FF6600"},{"sample":"pc7","reads":"44","color":"#FF6600"},{"sample":"pt1","reads":"26","color":"#FF6600"},{"sample":"pt2","reads":"33","color":"#FF6600"},{"sample":"pt3","reads":"41","color":"#FF6600"},{"sample":"pt4","reads":"53","color":"#FF6600"},{"sample":"pt5","reads":"22","color":"#FF6600"},{"sample":"pt6","reads":"27","color":"#FF6600"},{"sample":"pt7","reads":"35","color":"#FF6600"},{"sample":"cc1","reads":"47","color":"#FF6600"},{"sample":"cc2","reads":"24","color":"#FF6600"},{"sample":"cc3","reads":"22","color":"#FF6600"},{"sample":"cc4","reads":"38","color":"#FF6600"},{"sample":"cc5","reads":"32","color":"#FF6600"},{"sample":"cc6","reads":"23","color":"#FF6600"},{"sample":"cc7","reads":"31","color":"#FF6600"},{"sample":"ct1","reads":"11","color":"#FF6600"},{"sample":"ct2","reads":"22","color":"#FF6600"},{"sample":"ct3","reads":"16","color":"#FF6600"},{"sample":"ct4","reads":"28","color":"#FF6600"},{"sample":"ct5","reads":"31","color":"#FF6600"},{"sample":"ct6","reads":"35","color":"#FF6600"},{"sample":"ct7","reads":"25","color":"#FF6600"}],"seq_358956":[{"sample":"pc1","reads":"0","color":"#FF6600"},{"sample":"pc2","reads":"0","color":"#FF6600"},{"sample":"pc3","reads":"0","color":"#FF6600"},{"sample":"pc4","reads":"0","color":"#FF6600"},{"sample":"pc5","reads":"0","color":"#FF6600"},{"sample":"pc6","reads":"0","color":"#FF6600"},{"sample":"pc7","reads":"0","color":"#FF6600"},{"sample":"pt1","reads":"0","color":"#FF6600"},{"sample":"pt2","reads":"0","color":"#FF6600"},{"sample":"pt3","reads":"0","color":"#FF6600"},{"sample":"pt4","reads":"0","color":"#FF6600"},{"sample":"pt5","reads":"0","color":"#FF6600"},{"sample":"pt6","reads":"0","color":"#FF6600"},{"sample":"pt7","reads":"0","color":"#FF6600"},{"sample":"cc1","reads":"0","color":"#FF6600"},{"sample":"cc2","reads":"39","color":"#FF6600"},{"sample":"cc3","reads":"0","color":"#FF6600"},{"sample":"cc4","reads":"16","color":"#FF6600"},{"sample":"cc5","reads":"30","color":"#FF6600"},{"sample":"cc6","reads":"42","color":"#FF6600"},{"sample":"cc7","reads":"61","color":"#FF6600"},{"sample":"ct1","reads":"0","color":"#FF6600"},{"sample":"ct2","reads":"54","color":"#FF6600"},{"sample":"ct3","reads":"0","color":"#FF6600"},{"sample":"ct4","reads":"34","color":"#FF6600"},{"sample":"ct5","reads":"57","color":"#FF6600"},{"sample":"ct6","reads":"58","color":"#FF6600"},{"sample":"ct7","reads":"49","color":"#FF6600"}],"seq_20181":[{"sample":"pc1","reads":"1009","color":"#FF6600"},{"sample":"pc2","reads":"428","color":"#FF6600"},{"sample":"pc3","reads":"809","color":"#FF6600"},{"sample":"pc4","reads":"1022","color":"#FF6600"},{"sample":"pc5","reads":"776","color":"#FF6600"},{"sample":"pc6","reads":"450","color":"#FF6600"},{"sample":"pc7","reads":"697","color":"#FF6600"},{"sample":"pt1","reads":"424","color":"#FF6600"},{"sample":"pt2","reads":"516","color":"#FF6600"},{"sample":"pt3","reads":"648","color":"#FF6600"},{"sample":"pt4","reads":"833","color":"#FF6600"},{"sample":"pt5","reads":"414","color":"#FF6600"},{"sample":"pt6","reads":"595","color":"#FF6600"},{"sample":"pt7","reads":"918","color":"#FF6600"},{"sample":"cc1","reads":"716","color":"#FF6600"},{"sample":"cc2","reads":"551","color":"#FF6600"},{"sample":"cc3","reads":"446","color":"#FF6600"},{"sample":"cc4","reads":"895","color":"#FF6600"},{"sample":"cc5","reads":"605","color":"#FF6600"},{"sample":"cc6","reads":"460","color":"#FF6600"},{"sample":"cc7","reads":"773","color":"#FF6600"},{"sample":"ct1","reads":"112","color":"#FF6600"},{"sample":"ct2","reads":"611","color":"#FF6600"},{"sample":"ct3","reads":"286","color":"#FF6600"},{"sample":"ct4","reads":"542","color":"#FF6600"},{"sample":"ct5","reads":"591","color":"#FF6600"},{"sample":"ct6","reads":"549","color":"#FF6600"},{"sample":"ct7","reads":"526","color":"#FF6600"}],"seq_32481":[{"sample":"pc1","reads":"783","color":"#FF6600"},{"sample":"pc2","reads":"356","color":"#FF6600"},{"sample":"pc3","reads":"769","color":"#FF6600"},{"sample":"pc4","reads":"940","color":"#FF6600"},{"sample":"pc5","reads":"682","color":"#FF6600"},{"sample":"pc6","reads":"436","color":"#FF6600"},{"sample":"pc7","reads":"668","color":"#FF6600"},{"sample":"pt1","reads":"325","color":"#FF6600"},{"sample":"pt2","reads":"514","color":"#FF6600"},{"sample":"pt3","reads":"502","color":"#FF6600"},{"sample":"pt4","reads":"698","color":"#FF6600"},{"sample":"pt5","reads":"350","color":"#FF6600"},{"sample":"pt6","reads":"571","color":"#FF6600"},{"sample":"pt7","reads":"741","color":"#FF6600"},{"sample":"cc1","reads":"586","color":"#FF6600"},{"sample":"cc2","reads":"334","color":"#FF6600"},{"sample":"cc3","reads":"445","color":"#FF6600"},{"sample":"cc4","reads":"775","color":"#FF6600"},{"sample":"cc5","reads":"465","color":"#FF6600"},{"sample":"cc6","reads":"372","color":"#FF6600"},{"sample":"cc7","reads":"510","color":"#FF6600"},{"sample":"ct1","reads":"152","color":"#FF6600"},{"sample":"ct2","reads":"397","color":"#FF6600"},{"sample":"ct3","reads":"254","color":"#FF6600"},{"sample":"ct4","reads":"390","color":"#FF6600"},{"sample":"ct5","reads":"390","color":"#FF6600"},{"sample":"ct6","reads":"423","color":"#FF6600"},{"sample":"ct7","reads":"442","color":"#FF6600"}],"seq_32483":[{"sample":"pc1","reads":"151","color":"#FF6600"},{"sample":"pc2","reads":"93","color":"#FF6600"},{"sample":"pc3","reads":"141","color":"#FF6600"},{"sample":"pc4","reads":"184","color":"#FF6600"},{"sample":"pc5","reads":"141","color":"#FF6600"},{"sample":"pc6","reads":"64","color":"#FF6600"},{"sample":"pc7","reads":"123","color":"#FF6600"},{"sample":"pt1","reads":"46","color":"#FF6600"},{"sample":"pt2","reads":"77","color":"#FF6600"},{"sample":"pt3","reads":"166","color":"#FF6600"},{"sample":"pt4","reads":"119","color":"#FF6600"},{"sample":"pt5","reads":"55","color":"#FF6600"},{"sample":"pt6","reads":"78","color":"#FF6600"},{"sample":"pt7","reads":"134","color":"#FF6600"},{"sample":"cc1","reads":"111","color":"#FF6600"},{"sample":"cc2","reads":"122","color":"#FF6600"},{"sample":"cc3","reads":"84","color":"#FF6600"},{"sample":"cc4","reads":"174","color":"#FF6600"},{"sample":"cc5","reads":"130","color":"#FF6600"},{"sample":"cc6","reads":"72","color":"#FF6600"},{"sample":"cc7","reads":"130","color":"#FF6600"},{"sample":"ct1","reads":"17","color":"#FF6600"},{"sample":"ct2","reads":"119","color":"#FF6600"},{"sample":"ct3","reads":"59","color":"#FF6600"},{"sample":"ct4","reads":"98","color":"#FF6600"},{"sample":"ct5","reads":"94","color":"#FF6600"},{"sample":"ct6","reads":"87","color":"#FF6600"},{"sample":"ct7","reads":"94","color":"#FF6600"}]}];
+chartData=[];
+function loadSeq (x){
+    chartData=allData[0][x];    
+    chart.dataProvider=chartData;
+    chart.validateData();
+    //console.log(chartData);
+
+}
+AmCharts.ready(function() {
+
+    // SERIAL CHART
+    chart = new AmCharts.AmSerialChart();
+    chart.dataProvider = chartData;
+    chart.categoryField = "sample";
+    chart.startDuration = 1;
+    
+    // AXES
+    // category
+    var categoryAxis = chart.categoryAxis;
+    categoryAxis.labelRotation = 45; // this line makes category values to be rotated
+    categoryAxis.gridAlpha = 0;
+    categoryAxis.fillAlpha = 1;
+    categoryAxis.fillColor = "#FAFAFA";
+    categoryAxis.gridPosition = "start";
+    
+    // value
+    var valueAxis = new AmCharts.ValueAxis();
+    valueAxis.dashLength = 5;
+    valueAxis.title = "raw counts";
+    valueAxis.axisAlpha = 0;
+    chart.addValueAxis(valueAxis);
+    
+    // GRAPH
+    var graph = new AmCharts.AmGraph();
+    graph.valueField = "reads";
+    graph.colorField = "color";
+    graph.balloonText = "<b>[[category]]: [[value]]</b>";
+    graph.type = "column";
+    graph.lineAlpha = 0;
+    graph.fillAlphas = 1;
+    graph.title = "abundance";
+    chart.addGraph(graph);
+    
+    // CURSOR
+    var chartCursor = new AmCharts.ChartCursor();
+    chartCursor.cursorAlpha = 0;
+    chartCursor.zoomable = false;
+    chartCursor.categoryBalloonEnabled = false;
+    chart.addChartCursor(chartCursor);
+    
+    
+    // WRITE
+    chart.write("chartdiv");
+});
+
+
+
+        </script>
+
+</head>
+<body id="cluster">
+ <div class=css_clus name=C:636 id=C:636><div class=css_id name=clus id=clus><a name=C:636><b>C:636</b></a>
+</div><div class=css_loci name=loci id=loci><table cellpadding="0" cellspacing="0" border="0" class="info" id="table" width="500px"> <thead><tr><th>position</th>
+<th>annotation (element:strand)-(distance to 5,distance to 3)</th>
+</tr></thead><tbody><tr><td>chrX:49777863-49777887 +</td><td>refGene.bed(NM_001127898 +)-(90640,-86004);ensGene.bed(ENST00000376091 +)-(90590,-79251);miRNA.bed(Name=hsa-miR-660-5p +)-(0,3);</td></tr>
+ </tbody></table> </div><div class=css_exp name=expseqs id=expseqs>
+        <div id="chartdiv" style="width: 1000px; height: 300px;"></div>
+        <div>Click on sequences to see the expression</div>
+</div><div class=css_seqs name=plainseqs id=plainseqs><pre><br><a style="font-size:10px;"href=javascript:loadSeq("seq_447500")>TACCCATTGCATATCGGAGTTGCA</a><br><a style="font-size:23px;"href=javascript:loadSeq("seq_20181")>TACCCATTGCATATCGGAGTTG</a><br><a style="font-size:10px;"href=javascript:loadSeq("seq_9165")>TACCCATTGCATATCGGAGTTGTT</a><br><a style="font-size:10px;"href=javascript:loadSeq("seq_457570")>TACCCATTGCATATGGGAGTTG</a><br><a style="font-size:10px;"href=javascript:loadSeq("seq_243790")>TACCCATTGCATATCGGAGTTGTG</a><br><a style="font-size:12px;"href=javascript:loadSeq("seq_4482")>TACCCATTGCATATCGGAG</a><br><a style="font-size:15px;"href=javascript:loadSeq("seq_9171")>TACCCATTGCATATCGGAGTTGTA</a><br><a style="font-size:10px;"href=javascript:loadSeq("seq_64410")>TACCCATTGCATATCGGAGTTA</a><br><a style="font-size:17px;"href=javascript:loadSeq("seq_4500")>TACCCATTGCATATCGGAGT</a><br><a style="font-size:15px;"href=javascript:loadSeq("seq_20380")>TACCCATTGCATATCGGAGTT</a><br><a style="font-size:13px;"href=javascript:loadSeq("seq_358956")>TACCCATTGCATATCGGAGTTGC</a><br><a style="font-size:11px;"href=javascript:loadSeq("seq_358957")>TACCCATTGCATATCGGAGTTGG</a><br><a style="font-size:23px;"href=javascript:loadSeq("seq_32481")>TACCCATTGCATATCGGAGTTGT</a><br><a style="font-size:18px;"href=javascript:loadSeq("seq_32483")>TACCCATTGCATATCGGAGTTGA</a></pre></div><div class=css_table name=seqs id=seqs><pre><table cellpadding="0" cellspacing="0" border="0" class="info" id="table" width="500px"> <thead><tr><th>sequence</th>
+<th>size</th>
+<th>pc1</th>
+<th>pc2</th>
+<th>pc3</th>
+<th>pc4</th>
+<th>pc5</th>
+<th>pc6</th>
+<th>pc7</th>
+<th>pt1</th>
+<th>pt2</th>
+<th>pt3</th>
+<th>pt4</th>
+<th>pt5</th>
+<th>pt6</th>
+<th>pt7</th>
+<th>cc1</th>
+<th>cc2</th>
+<th>cc3</th>
+<th>cc4</th>
+<th>cc5</th>
+<th>cc6</th>
+<th>cc7</th>
+<th>ct1</th>
+<th>ct2</th>
+<th>ct3</th>
+<th>ct4</th>
+<th>ct5</th>
+<th>ct6</th>
+<th>ct7</th>
+</tr></thead><tbody><tr><td>TACCCATTGCATATCGGAGTTGCA</td><td>24</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGG</td><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>39</td><td>25</td><td>12</td><td>41</td><td>0</td><td>26</td><td>0</td><td>21</td><td>21</td><td>18</td><td>15</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGTT</td><td>24</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>TACCCATTGCATATGGGAGTTG</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGTG</td><td>24</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>13</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>TACCCATTGCATATCGGAG</td><td>19</td><td>16</td><td>11</td><td>15</td><td>14</td><td>16</td><td>0</td><td>13</td><td>0</td><td>14</td><td>18</td><td>0</td><td>0</td><td>10</td><td>16</td><td>23</td><td>11</td><td>13</td><td>33</td><td>17</td><td>11</td><td>0</td><td>0</td><td>17</td><td>10</td><td>12</td><td>15</td><td>0</td><td>19</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGTA</td><td>24</td><td>49</td><td>32</td><td>42</td><td>73</td><td>39</td><td>34</td><td>49</td><td>27</td><td>57</td><td>43</td><td>84</td><td>25</td><td>26</td><td>69</td><td>46</td><td>29</td><td>31</td><td>40</td><td>28</td><td>19</td><td>37</td><td>0</td><td>33</td><td>20</td><td>23</td><td>36</td><td>21</td><td>27</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTA</td><td>22</td><td>0</td><td>0</td><td>10</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>15</td><td>12</td><td>0</td><td>32</td><td>10</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>18</td><td>11</td><td>12</td><td>0</td></tr>
+<tr><td>TACCCATTGCATATCGGAGT</td><td>20</td><td>97</td><td>47</td><td>103</td><td>89</td><td>70</td><td>50</td><td>63</td><td>35</td><td>73</td><td>90</td><td>93</td><td>43</td><td>48</td><td>93</td><td>89</td><td>54</td><td>67</td><td>95</td><td>67</td><td>54</td><td>62</td><td>15</td><td>78</td><td>42</td><td>45</td><td>53</td><td>47</td><td>73</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTT</td><td>21</td><td>55</td><td>27</td><td>57</td><td>51</td><td>43</td><td>24</td><td>44</td><td>26</td><td>33</td><td>41</td><td>53</td><td>22</td><td>27</td><td>35</td><td>47</td><td>24</td><td>22</td><td>38</td><td>32</td><td>23</td><td>31</td><td>11</td><td>22</td><td>16</td><td>28</td><td>31</td><td>35</td><td>25</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGC</td><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>39</td><td>0</td><td>16</td><td>30</td><td>42</td><td>61</td><td>0</td><td>54</td><td>0</td><td>34</td><td>57</td><td>58</td><td>49</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTG</td><td>22</td><td>1009</td><td>428</td><td>809</td><td>1022</td><td>776</td><td>450</td><td>697</td><td>424</td><td>516</td><td>648</td><td>833</td><td>414</td><td>595</td><td>918</td><td>716</td><td>551</td><td>446</td><td>895</td><td>605</td><td>460</td><td>773</td><td>112</td><td>611</td><td>286</td><td>542</td><td>591</td><td>549</td><td>526</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGT</td><td>23</td><td>783</td><td>356</td><td>769</td><td>940</td><td>682</td><td>436</td><td>668</td><td>325</td><td>514</td><td>502</td><td>698</td><td>350</td><td>571</td><td>741</td><td>586</td><td>334</td><td>445</td><td>775</td><td>465</td><td>372</td><td>510</td><td>152</td><td>397</td><td>254</td><td>390</td><td>390</td><td>423</td><td>442</td></tr>
+<tr><td>TACCCATTGCATATCGGAGTTGA</td><td>23</td><td>151</td><td>93</td><td>141</td><td>184</td><td>141</td><td>64</td><td>123</td><td>46</td><td>77</td><td>166</td><td>119</td><td>55</td><td>78</td><td>134</td><td>111</td><td>122</td><td>84</td><td>174</td><td>130</td><td>72</td><td>130</td><td>17</td><td>119</td><td>59</td><td>98</td><td>94</td><td>87</td><td>94</td></tr>
+ </tbody></table> </pre></div></div> </body></html> 

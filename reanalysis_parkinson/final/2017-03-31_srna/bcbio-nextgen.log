@@ -1,0 +1,687 @@
+[2017-03-31T22:44Z] clarinet002-069: System YAML configuration: /groups/bcbio/bcbio_dev/galaxy/bcbio_system.yaml
+[2017-03-31T22:44Z] clarinet002-069: Resource query function not implemented for scheduler "lsf"; submitting job to queue
+[2017-03-31T22:45Z] clarinet002-069: ipython: machine_info
+[2017-03-31T22:46Z] clarinet002-069: Timing: organize samples
+[2017-03-31T22:46Z] clarinet002-069: ipython: organize_samples
+[2017-03-31T22:46Z] piccolo002-188: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T22:46Z] piccolo002-188: Unexpected error
+Traceback (most recent call last):
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 50, in _setup_logging
+    yield config
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 480, in organize_samples
+    return ipython.zip_args(apply(run_info.organize, *args))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 49, in organize
+    run_details = _run_info_from_yaml(dirs, run_info_yaml, config, sample_names)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 743, in _run_info_from_yaml
+    item = _normalize_files(item, dirs.get("flowcell"))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 662, in _normalize_files
+    _sanity_check_files(item, files)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 683, in _sanity_check_files
+    raise ValueError("%s for %s: %s" % (msg, item.get("description", ""), files))
+ValueError: Expect either 1 (single end) or 2 (paired end) fastq inputs for pc1: ['/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_2_1.fastq.gz']
+[2017-03-31T22:46Z] piccolo002-188: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T22:46Z] piccolo002-188: Unexpected error
+Traceback (most recent call last):
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 50, in _setup_logging
+    yield config
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 480, in organize_samples
+    return ipython.zip_args(apply(run_info.organize, *args))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 49, in organize
+    run_details = _run_info_from_yaml(dirs, run_info_yaml, config, sample_names)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 743, in _run_info_from_yaml
+    item = _normalize_files(item, dirs.get("flowcell"))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 662, in _normalize_files
+    _sanity_check_files(item, files)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 683, in _sanity_check_files
+    raise ValueError("%s for %s: %s" % (msg, item.get("description", ""), files))
+ValueError: Expect either 1 (single end) or 2 (paired end) fastq inputs for pc1: ['/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_2_1.fastq.gz']
+[2017-03-31T22:46Z] piccolo002-181: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T22:46Z] piccolo002-181: Unexpected error
+Traceback (most recent call last):
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 50, in _setup_logging
+    yield config
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 480, in organize_samples
+    return ipython.zip_args(apply(run_info.organize, *args))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 49, in organize
+    run_details = _run_info_from_yaml(dirs, run_info_yaml, config, sample_names)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 743, in _run_info_from_yaml
+    item = _normalize_files(item, dirs.get("flowcell"))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 662, in _normalize_files
+    _sanity_check_files(item, files)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 683, in _sanity_check_files
+    raise ValueError("%s for %s: %s" % (msg, item.get("description", ""), files))
+ValueError: Expect either 1 (single end) or 2 (paired end) fastq inputs for pc1: ['/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_2_1.fastq.gz']
+[2017-03-31T22:46Z] piccolo002-188: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T22:46Z] piccolo002-188: Unexpected error
+Traceback (most recent call last):
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 50, in _setup_logging
+    yield config
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 480, in organize_samples
+    return ipython.zip_args(apply(run_info.organize, *args))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 49, in organize
+    run_details = _run_info_from_yaml(dirs, run_info_yaml, config, sample_names)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 743, in _run_info_from_yaml
+    item = _normalize_files(item, dirs.get("flowcell"))
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 662, in _normalize_files
+    _sanity_check_files(item, files)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/pipeline/run_info.py", line 683, in _sanity_check_files
+    raise ValueError("%s for %s: %s" % (msg, item.get("description", ""), files))
+ValueError: Expect either 1 (single end) or 2 (paired end) fastq inputs for pc1: ['/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_2_1.fastq.gz', '/n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_2_1.fastq.gz']
+[2017-03-31T22:47Z] clarinet002-069: Did not stop IPython cluster correctly
+Traceback (most recent call last):
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipython.py", line 92, in stop
+    ipython_cluster.stop_from_view(view)
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/cluster_helper/cluster.py", line 896, in stop_from_view
+    _stop(view.clusterhelper["profile"], view.clusterhelper["cluster_id"])
+  File "/groups/bcbio/bcbio_dev/anaconda/lib/python2.7/site-packages/cluster_helper/cluster.py", line 904, in _stop
+    except CalledProcessError:
+NameError: global name 'CalledProcessError' is not defined
+[2017-03-31T23:00Z] clarinet002-074: System YAML configuration: /groups/bcbio/bcbio_dev/galaxy/bcbio_system.yaml
+[2017-03-31T23:01Z] clarinet002-074: Timing: organize samples
+[2017-03-31T23:01Z] clarinet002-074: ipython: organize_samples
+[2017-03-31T23:01Z] piccolo002-179: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T23:01Z] piccolo002-179: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/config/srna.yaml
+[2017-03-31T23:01Z] piccolo002-179: Testing minimum versions of installed programs
+[2017-03-31T23:01Z] clarinet002-074: ipython: prepare_sample
+[2017-03-31T23:02Z] clarinet002-074: Timing: adapter trimming
+[2017-03-31T23:02Z] clarinet002-074: ipython: trim_srna_sample
+[2017-03-31T23:38Z] clarinet002-074: Timing: prepare
+[2017-03-31T23:38Z] clarinet002-074: ipython: seqcluster_prepare
+[2017-03-31T23:41Z] clarinet002-074: Timing: alignment
+[2017-03-31T23:41Z] clarinet002-074: ipython: srna_alignment
+[2017-03-31T23:41Z] piccolo002-185: Aligning lane 1_2017-03-31_srna with star aligner
+[2017-03-31T23:46Z] clarinet002-074: Timing: small RNA annotation
+[2017-03-31T23:46Z] clarinet002-074: ipython: srna_annotation
+[2017-03-31T23:49Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:50Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:50Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:50Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:50Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:50Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:51Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:52Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:52Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:52Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:52Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:52Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:53Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:53Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:53Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:54Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:54Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:54Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:54Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:55Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:55Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:55Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:55Z] piccolo002-176: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:55Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:56Z] piccolo002-185: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:56Z] piccolo002-194: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:57Z] piccolo002-179: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:58Z] piccolo002-179: Cannot detect miraligner version, asumming latest.
+[2017-03-31T23:59Z] clarinet002-074: Timing: cluster
+[2017-03-31T23:59Z] clarinet002-074: ipython: seqcluster_cluster
+[2017-04-01T00:39Z] clarinet002-074: Timing: quality control
+[2017-04-01T00:39Z] clarinet002-074: ipython: pipeline_summary
+[2017-04-01T00:39Z] piccolo002-179: QC: pc2 small-rna
+[2017-04-01T00:39Z] piccolo002-179: QC: pc2 fastqc
+[2017-04-01T00:39Z] piccolo002-178: QC: pc1 fastqc
+[2017-04-01T00:39Z] piccolo002-178: QC: pc1 small-rna
+[2017-04-01T00:39Z] piccolo002-179: QC: pc3 fastqc
+[2017-04-01T00:39Z] piccolo002-178: QC: pc3 small-rna
+[2017-04-01T00:39Z] piccolo002-178: QC: pc5 fastqc
+[2017-04-01T00:40Z] piccolo002-179: QC: pc6 fastqc
+[2017-04-01T00:40Z] piccolo002-179: QC: pc6 small-rna
+[2017-04-01T00:40Z] piccolo002-179: QC: pt1 small-rna
+[2017-04-01T00:40Z] piccolo002-179: QC: pt2 fastqc
+[2017-04-01T00:40Z] piccolo002-183: QC: pc5 small-rna
+[2017-04-01T00:40Z] piccolo002-183: QC: pt1 fastqc
+[2017-04-01T00:40Z] piccolo002-183: QC: pc4 fastqc
+[2017-04-01T00:40Z] piccolo002-183: QC: pc4 small-rna
+[2017-04-01T00:40Z] piccolo002-183: QC: pt3 small-rna
+[2017-04-01T00:40Z] piccolo002-183: QC: pt4 fastqc
+[2017-04-01T00:40Z] piccolo002-183: QC: pt4 small-rna
+[2017-04-01T00:40Z] piccolo002-183: QC: pt5 fastqc
+[2017-04-01T00:40Z] piccolo002-179: QC: pt3 fastqc
+[2017-04-01T00:40Z] piccolo002-179: QC: pt2 small-rna
+[2017-04-01T00:40Z] piccolo002-179: QC: pt5 small-rna
+[2017-04-01T00:40Z] piccolo002-179: QC: pt6 fastqc
+[2017-04-01T00:41Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc2/fastqc/fastqc_report.html
+[2017-04-01T00:41Z] piccolo002-179: QC: pt6 small-rna
+[2017-04-01T00:41Z] piccolo002-179: QC: pc7 fastqc
+[2017-04-01T00:41Z] piccolo002-178: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc1/fastqc/fastqc_report.html
+[2017-04-01T00:41Z] piccolo002-178: QC: pc7 small-rna
+[2017-04-01T00:41Z] piccolo002-178: QC: pt7 fastqc
+[2017-04-01T00:41Z] piccolo002-178: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc5/fastqc/fastqc_report.html
+[2017-04-01T00:41Z] piccolo002-178: QC: pt7 small-rna
+[2017-04-01T00:41Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt1/fastqc/fastqc_report.html
+[2017-04-01T00:41Z] piccolo002-183: QC: cc1 fastqc
+[2017-04-01T00:41Z] piccolo002-178: QC: cc1 small-rna
+[2017-04-01T00:41Z] piccolo002-178: QC: cc2 fastqc
+[2017-04-01T00:41Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt2/fastqc/fastqc_report.html
+[2017-04-01T00:41Z] piccolo002-179: QC: cc2 small-rna
+[2017-04-01T00:42Z] piccolo002-179: QC: cc3 fastqc
+[2017-04-01T00:42Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc3/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-179: QC: cc3 small-rna
+[2017-04-01T00:42Z] piccolo002-179: QC: cc4 fastqc
+[2017-04-01T00:42Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc6/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-179: QC: cc4 small-rna
+[2017-04-01T00:42Z] piccolo002-179: QC: cc5 fastqc
+[2017-04-01T00:42Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc4/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-183: QC: cc5 small-rna
+[2017-04-01T00:42Z] piccolo002-183: QC: cc6 fastqc
+[2017-04-01T00:42Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt5/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-183: QC: cc6 small-rna
+[2017-04-01T00:42Z] piccolo002-183: QC: ct1 fastqc
+[2017-04-01T00:42Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt4/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-183: QC: ct1 small-rna
+[2017-04-01T00:42Z] piccolo002-183: QC: ct2 fastqc
+[2017-04-01T00:42Z] piccolo002-178: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc2/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-178: QC: ct2 small-rna
+[2017-04-01T00:42Z] piccolo002-178: QC: ct3 fastqc
+[2017-04-01T00:42Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt6/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-179: QC: ct3 small-rna
+[2017-04-01T00:42Z] piccolo002-179: QC: ct4 fastqc
+[2017-04-01T00:42Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc1/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-183: QC: ct4 small-rna
+[2017-04-01T00:42Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc3/fastqc/fastqc_report.html
+[2017-04-01T00:42Z] piccolo002-179: QC: ct5 fastqc
+[2017-04-01T00:42Z] piccolo002-183: QC: ct5 small-rna
+[2017-04-01T00:43Z] piccolo002-183: QC: ct6 fastqc
+[2017-04-01T00:43Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct1/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-183: QC: ct6 small-rna
+[2017-04-01T00:43Z] piccolo002-183: QC: cc7 fastqc
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc4/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: QC: cc7 small-rna
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt3/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: QC: ct7 fastqc
+[2017-04-01T00:43Z] piccolo002-179: QC: ct7 small-rna
+[2017-04-01T00:43Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc6/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc5/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-178: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct3/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct2/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-178: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pt7/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/pc7/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct5/fastqc/fastqc_report.html
+[2017-04-01T00:43Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct4/fastqc/fastqc_report.html
+[2017-04-01T00:44Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct6/fastqc/fastqc_report.html
+[2017-04-01T00:44Z] piccolo002-179: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/ct7/fastqc/fastqc_report.html
+[2017-04-01T00:44Z] piccolo002-183: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/qc/cc7/fastqc/fastqc_report.html
+[2017-04-01T00:44Z] clarinet002-074: ipython: qsignature_summary
+[2017-04-01T00:44Z] clarinet002-074: ipython: multiqc_summary
+[2017-04-01T00:44Z] piccolo002-178: copy qsignature
+[2017-04-01T00:44Z] piccolo002-178: summarize fastqc
+[2017-04-01T00:44Z] piccolo002-178: summarize target information
+[2017-04-01T00:44Z] piccolo002-178: summarize coverage
+[2017-04-01T00:44Z] piccolo002-178: summarize variants
+[2017-04-01T00:44Z] piccolo002-178: summarize metrics
+[2017-04-01T00:45Z] clarinet002-074: Timing: report
+[2017-04-01T00:45Z] clarinet002-074: Timing: upload
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/fastqc/pc2.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/qc/small-rna/pc2_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/pc2-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/pc2-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/fastqc/pt2.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/qc/small-rna/pt2_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc2/pc2-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/pt2-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/fastqc/cc4.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/qc/small-rna/cc4_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/pt2-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/cc4-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/cc6.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/cc4-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt2/pt2-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/qc/small-rna/cc6_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc4/cc4-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/cc7.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/cc6-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/cc3.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/cc6-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/qc/small-rna/cc3_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/cc3-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/qc/small-rna/cc7_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/cc7-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/cc7-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/ct1.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/cc3-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc6/cc6-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc3/cc3-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/qc/small-rna/ct1_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/ct1-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/ct1-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc7/cc7-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct1/ct1-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/fastqc/pt7.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/fastqc/pc3.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/qc/small-rna/pt7_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/qc/small-rna/pc3_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/pt7-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/pc3-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/pt7-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/pc3-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt7/pt7-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc3/pc3-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/fastqc/pc1.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/small-rna/pc1.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/qc/small-rna/pc1_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/pc1-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/pc1-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/ct6.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/qc/small-rna/ct6_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/ct6-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/ct6-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/pt5.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc1/pc1-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct6/ct6-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/qc/small-rna/pt5_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/pt5-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/fastqc/ct4.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/pt5-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/qc/small-rna/ct4_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/ct4-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt5/pt5-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/ct4-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct4/ct4-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/pt4.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/qc/small-rna/pt4_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/pt4-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/pt4-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/pt6.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt4/pt4-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/qc/small-rna/pt6_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/ct7.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/pt6-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/fastqc/ct2.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/qc/small-rna/ct2_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/ct2-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/pt6-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/ct2-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt6/pt6-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct2/ct2-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/qc/small-rna/ct7_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/ct7-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/ct7-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/fastqc/cc2.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/qc/small-rna/cc2_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/cc2-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct7/ct7-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/cc2-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/ct5.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/qc/small-rna/ct5_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/ct5-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc2/cc2-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/ct5-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct5/ct5-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/pc7.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/fastqc/ct3.zip
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/qc/small-rna/ct3_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/ct3-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/qc/small-rna/pc7_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/ct3-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/pc7-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/pc7-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/fastqc/cc1.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/qc/small-rna/cc1_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/cc1-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/ct3/ct3-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc7/pc7-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/cc5.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/cc1-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/qc/small-rna/cc5_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/cc5-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/cc5-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/pc5.zip
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc1/cc1-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/cc5/cc5-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/qc/small-rna/pc5_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/pc5-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/fastqc/pt1.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/fastqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/pc5-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/pc4.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/pt3.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc5/pc5-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/qc/small-rna/pt1_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/pt1-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/fastqc_data.txt
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/pt1-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/qc/small-rna/pt3_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/qc/small-rna/pc4_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/pt3-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/fastqc/pc6.zip
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/pc4-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/qc/small-rna/pc6_bcbio_mirbase.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/pt3-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/pc6-ready.trimming_stats
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/pc4-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-183: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt1/pt1-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/pc6-mirbase-ready.counts
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc4/pc4-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pt3/pt3-transcriptome.bam
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/pc6/pc6-transcriptome.bam
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/programs.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/data_versions.csv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/bcbio-nextgen.log
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/bcbio-nextgen-commands.log
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/project-summary.yaml
+[2017-04-01T00:45Z] piccolo002-179: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/report
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_report.html
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/seqbuster_mirs.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/multiqc_bcbio_metrics.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/seqbuster_isomirs.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/multiqc_fastqc.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/multiqc_sources.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/multiqc_data/multiqc_general_stats.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc4_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc6_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc5_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct7_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc7_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt5_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt2_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct6_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc1_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt3_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc5_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc6_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt6_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc3_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc4_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc2_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt1_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc3_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt7_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/cc1_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct1_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pt4_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc7_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct4_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/pc2_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct2_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct3_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/metrics/ct5_bcbio.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_tile_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_sequence_GC_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_base_sequence_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_base_sequence_quality.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Sequence_Length_Distribution.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_base_N_content.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/fastqc/Per_sequence_quality_scores.tsv
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/qc-coverage-report-run.R
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/report/report-ready.Rmd
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/list_files.txt
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/multiqc/list_files_final.txt
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/bcbio-nextgen.log
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] piccolo002-178: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/seqcluster
+[2017-04-01T00:45Z] piccolo002-178: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/seqclusterViz
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/counts.tsv
+[2017-04-01T00:45Z] piccolo002-178: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/counts_mirna.tsv
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/bcbio-nextgen.log
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] clarinet002-074: ipython: upload_samples_project
+[2017-04-01T00:45Z] piccolo002-179: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final/2017-03-31_srna/bcbio-nextgen.log

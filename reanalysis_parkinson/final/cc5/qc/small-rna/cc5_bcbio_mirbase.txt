@@ -1,0 +1,11 @@
+# stats seqbuster, version: 3.1
+mirs	894
+isomirs	29098
+mirs_mutations	392
+mirs_additions	615
+mirs_5-trimming	478
+mirs_3-trimming	754
+iso_mutations	16796
+iso_additions	15425
+iso_5-trimming	4696
+iso_3-trimming	20137

@@ -1,0 +1,1600 @@
+date: '2017-03-31 20:45:38.230934'
+upload: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/final
+bcbio_system: /groups/bcbio/bcbio_dev/galaxy/bcbio_system.yaml
+samples:
+- description: pc2
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '49'
+      Name: pc2
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pt2
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '49'
+      Name: pt2
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: cc7
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: cc7
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc4
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: cc4
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc6
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: cc6
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: ct1
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: ct1
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: ct6
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: ct6
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pt7
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: pt7
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: ct4
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: ct4
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pc1
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: pc1
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: ct5
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '48'
+      Name: ct5
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc3
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '46'
+      Name: cc3
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pt6
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '49'
+      Name: pt6
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: ct2
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: ct2
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pc3
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '48'
+      Name: pc3
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pt3
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: pt3
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pt5
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '50'
+      Name: pt5
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: ct7
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: ct7
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc1
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '46'
+      Name: cc1
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc5
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '46'
+      Name: cc5
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pt4
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: pt4
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pc5
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: pc5
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: ct3
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Clinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '49'
+      Name: ct3
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: cc2
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '47'
+      Name: cc2
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+- description: pc4
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '48'
+      Name: pc4
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pc7
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '49'
+      Name: pc7
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pc6
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: Controlpreclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '50'
+      Name: pc6
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'
+- description: pt1
+  dirs:
+    config: /groups/bcbio/bcbio_dev/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /groups/bcbio/bcbio_dev/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_83_GRCh37
+      human: true
+      snpeff: hg19
+    coverage:
+      MIG: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbsnp: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      lcr: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 30
+  metadata:
+    batch: null
+    group: preclinic
+    phenotype: ''
+  sam_ref: /groups/bcbio/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '50'
+      Name: pt1
+      Quality format: standard
+      Sequence length: 17-68
+      Sequences flagged as poor quality: '0'

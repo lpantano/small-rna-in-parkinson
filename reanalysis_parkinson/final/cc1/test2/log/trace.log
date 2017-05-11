@@ -1,0 +1,8 @@
+INFO - Run annotation
+INFO - Reading cc1-transcriptome.bam
+WARNING - Same isomir hsa-miR-128-3p.C17T from different sequence: 
+TCACAGTGAACCGGTCTTTTTT	seq_156051_x51	51	hsa-miR-128-3p	NA	NA	17TC	0	0		NA	NA	miRNA	hsa-mir-128-1	1	hsa-miR-128-3p.C17T and 
+TCACAGTGAACCGGTCTTTTT	seq_22540_x110	110	hsa-miR-128-3p	NA	NA	17TC	0	0	0	NA	NA	miRNA	hsa-mir-128-2	1	hsa-miR-128-3p.C17T
+WARNING - Sequence index out of range.
+WARNING - list index out of range
+INFO - It took 1.771 minutes

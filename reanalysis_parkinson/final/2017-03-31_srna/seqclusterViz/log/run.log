@@ -1,0 +1,10 @@
+INFO-seqcluster.libs.logger(30): Run report
+INFO-report(26): reading sequeces
+INFO-report(31): create profile
+INFO-html(176): locus bigger > 500 nt, skipping: [[20519, u'chrUn_gl000220', 109033, 111006, u'+', 8012], [20572, u'chrUn_gl000220', 153005, 154978, u'+', 7869]]
+INFO-html(176): locus bigger > 500 nt, skipping: [[20540, u'chrUn_gl000220', 113339, 118416, u'+', 18040], [20593, u'chrUn_gl000220', 157311, 161795, u'+', 15318]]
+INFO-html(176): locus bigger > 500 nt, skipping: [[20335, u'chrM', 1114, 3360, u'+', 5405]]
+INFO-html(176): locus bigger > 500 nt, skipping: [[20334, u'chrM', 562, 1089, u'+', 1249]]
+INFO-report(33): create database
+INFO-report(44): Done. Download https://github.com/lpantano/seqclusterViz/archive/master.zip to browse the output.
+INFO-seqcluster.libs.logger(53): It took 11.031 minutes

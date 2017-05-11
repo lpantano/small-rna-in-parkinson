@@ -1,0 +1,341 @@
+details:
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc1
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc2
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_1_9_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc3
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc4
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_2_9_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc5
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_3_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc6
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_3_7_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt1
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt2
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_4_9_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt3
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_6_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt4
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_6_9_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt5
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_7_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt6
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_7_7_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pc7
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_8_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlpreclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: pt7
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/70KBTAAXX_8_7_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: preclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc1
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane1_sequence.txt_1_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc2
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane1_sequence.txt_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc3
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane2_sequence.txt_1_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc4
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane2_sequence.txt_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc5
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane3_sequence.txt_3_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc6
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane3_sequence.txt_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct1
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane4_sequence.txt_1_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct2
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane4_sequence.txt_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct3
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane6_sequence.txt_1_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct4
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane6_sequence.txt_2_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct5
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane7_sequence.txt_3_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct6
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane7_sequence.txt_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: cc7
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane8_sequence.txt_3_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Controlclinic
+- algorithm:
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ct7
+  files:
+  - /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/lane8_sequence.txt_4_1.fastq.gz
+  genome_build: hg19
+  metadata:
+    group: Clinic
+fc_date: '2017-03-31'
+fc_name: srna
+upload:
+  dir: ../final

@@ -1,0 +1,29 @@
+Sample	adapter_content	Sequences flagged as poor quality	sequence_duplication_levels	avg_sequence_length	Encoding	kmer_content	per_base_sequence_quality	sequence_length_distribution	Sequence length	File type	basic_statistics	per_sequence_gc_content	Total Sequences	per_base_n_content	per_base_sequence_content	overrepresented_sequences	%GC	total_deduplicated_percentage	Filename	per_tile_sequence_quality	per_sequence_quality_scores
+cc1	pass	0.0	fail	21.8867987493	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	8678102.0	pass	fail	fail	46.0	5.51394304929	cc1	fail	pass
+cc2	pass	0.0	fail	21.752262344	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	fail	7530906.0	pass	fail	fail	47.0	5.59537988933	cc2	fail	pass
+cc3	pass	0.0	fail	21.8709930539	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	5811346.0	pass	fail	fail	46.0	4.86679309675	cc3	pass	pass
+cc4	pass	0.0	fail	21.7979131846	Illumina 1.5	fail	pass	warn	17-28	Conventional base calls	pass	warn	8438408.0	pass	fail	fail	47.0	4.79374366339	cc4	pass	pass
+cc5	pass	0.0	fail	21.7715402833	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	fail	7672543.0	pass	fail	fail	46.0	4.82438355574	cc5	fail	pass
+cc6	pass	0.0	fail	21.7149733677	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	5334498.0	pass	fail	fail	47.0	6.05805236484	cc6	fail	pass
+cc7	pass	0.0	fail	21.7396575945	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	9001315.0	pass	fail	fail	47.0	6.12922662874	cc7	fail	pass
+ct1	pass	0.0	fail	21.5016502688	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	3623955.0	pass	fail	fail	47.0	7.10156482093	ct1	pass	pass
+ct2	pass	0.0	fail	21.7542232554	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	6621314.0	pass	fail	fail	47.0	5.55221796106	ct2	pass	pass
+ct3	pass	0.0	fail	21.8727551986	Illumina 1.5	fail	pass	warn	17-28	Conventional base calls	pass	fail	5454046.0	pass	fail	fail	49.0	11.1510915271	ct3	pass	pass
+ct4	pass	0.0	fail	21.7458289129	Illumina 1.5	fail	pass	warn	17-28	Conventional base calls	pass	warn	6514309.0	pass	fail	fail	47.0	5.3155952721	ct4	pass	pass
+ct5	pass	0.0	fail	21.7567208441	Illumina 1.5	fail	pass	warn	17-28	Conventional base calls	pass	warn	7341377.0	pass	fail	fail	48.0	6.622823699	ct5	fail	pass
+ct6	pass	0.0	fail	21.8106780531	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	fail	7503409.0	pass	fail	fail	47.0	5.01742351146	ct6	fail	pass
+ct7	pass	0.0	fail	21.7866123438	Illumina 1.5	warn	pass	warn	17-28	Conventional base calls	pass	warn	6713931.0	pass	fail	fail	47.0	6.70780767045	ct7	fail	pass
+pc1	pass	0.0	fail	24.7307123252	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	16305024.0	pass	fail	fail	47.0	3.9007012219	pc1	fail	pass
+pc2	pass	0.0	fail	26.3997405754	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	fail	14849786.0	pass	fail	fail	49.0	4.17690941055	pc2	fail	pass
+pc3	pass	0.0	fail	25.8408404491	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	15331232.0	pass	fail	fail	48.0	2.41265458988	pc3	fail	pass
+pc4	pass	0.0	fail	25.3579173391	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	15579723.0	pass	fail	fail	48.0	2.89317180605	pc4	fail	pass
+pc5	pass	0.0	fail	25.4599568847	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	fail	15245642.0	pass	fail	fail	47.0	2.95414089015	pc5	fail	pass
+pc6	pass	0.0	fail	28.4267896487	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	fail	15902157.0	pass	fail	fail	50.0	2.37589428977	pc6	fail	pass
+pc7	pass	0.0	fail	26.773891906	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	15460309.0	pass	fail	fail	49.0	2.83734627056	pc7	fail	pass
+pt1	pass	0.0	fail	27.9877374751	Sanger / Illumina 1.9	warn	pass	warn	17-68	Conventional base calls	pass	fail	12232228.0	pass	fail	fail	50.0	5.1663985889	pt1	fail	pass
+pt2	pass	0.0	fail	27.0255073154	Sanger / Illumina 1.9	warn	pass	warn	17-68	Conventional base calls	pass	fail	13677488.0	pass	fail	fail	49.0	3.27592594523	pt2	fail	pass
+pt3	pass	0.0	fail	25.3360833961	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	fail	17118397.0	pass	fail	fail	47.0	2.08720972072	pt3	fail	pass
+pt4	pass	0.0	fail	25.7146326269	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	13945876.0	pass	fail	fail	47.0	2.80971531878	pt4	fail	pass
+pt5	pass	0.0	fail	27.9301633804	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	10442258.0	pass	fail	fail	50.0	2.49286315854	pt5	fail	pass
+pt6	pass	0.0	fail	27.7787375735	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	17315258.0	pass	fail	fail	49.0	2.75098101682	pt6	fail	pass
+pt7	pass	0.0	fail	25.5470066121	Sanger / Illumina 1.9	fail	pass	warn	17-68	Conventional base calls	pass	warn	15464601.0	pass	fail	fail	47.0	2.94651402688	pt7	fail	pass

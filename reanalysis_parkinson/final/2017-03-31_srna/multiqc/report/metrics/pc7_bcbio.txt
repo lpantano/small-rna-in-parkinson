@@ -1,0 +1,7 @@
+%GC	49
+Name	pc7
+Quality_format	standard
+Sequence_length	17-68
+Sequences_flagged_as_poor_quality	0
+sample	pc7
+rRNA_rate	NA

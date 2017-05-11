@@ -1,0 +1,2 @@
+seq	name	freq	chrom	start	end	mism	add	t5	t3	s5	s3	DB	precursor	ambiguity	Name
+TTGAAAGGCTATTTCTTGGTCT	seq_244390_x882	882	hsa-miR-488-3p	NA	NA	0	T	0	0	NA	NA	miRNA	hsa-mir-488	1	hsa-miR-488-3p.eT

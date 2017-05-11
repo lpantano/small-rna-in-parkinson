@@ -1,0 +1,5 @@
+INFO-mirtop.libs.logger(15): Run annotation
+INFO-mirtop.libs.logger(433): Reading let7-1D.sam
+DEBUG-run(16): samtools view -Sbh let7-1D.sam -o let7-1D.bam
+DEBUG-run(16): samtools sort -n -o let7-1D_sort.bam let7-1D.bam
+DEBUG-mirtop.libs.logger(199): Alignment: [(2, 1), (0, 18)] -TTAGGTAGTAGGTTGTAT TTGAGGTAGTAGGTTGTAT

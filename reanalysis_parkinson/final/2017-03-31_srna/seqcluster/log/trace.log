@@ -1,0 +1,37 @@
+INFO - Run cluster
+INFO - Checking parameters and files
+INFO - Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/seqcluster/cluster
+INFO - Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+INFO - Using /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/align/seqs_rmlw.bam file
+INFO - Total genome with sequences: 0.000188066 
+INFO - Parsing matrix file
+INFO - counts after: 287210341
+INFO - # sequences after: 178734
+INFO - Cleaning bam file
+INFO - counts after: 278747771
+INFO - # sequences after: 144936
+INFO - Parsing aligned file
+INFO - Merging sequences
+INFO - Creating clusters
+INFO - 21811 Clusters read
+INFO - Creating meta-clusters based on shared sequences: 144936
+INFO - 666 metaclusters from 131167 sequences
+INFO - 666 clusters found
+INFO - counts after: 278747771
+INFO - # sequences after: 144936
+INFO - Solving multi-mapping events in the network of clusters
+INFO - Number of loci: 21811
+INFO - seqs in clusters 130287
+INFO - Clusters too long to be analized: 0
+INFO - Number of clusters removed because low number of reads: 146
+INFO - Number of clusters with conflicts: 94
+INFO - counts after: 277630365
+INFO - # sequences after: 130287
+INFO - Clusters up to 875
+INFO - Creating bed file
+INFO - Annotating clusters
+INFO - Using /groups/bcbio/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf 
+INFO - Creating json and count matrix
+INFO - Output file in: /n/scratch2/hsph_bioinformatic_core/lp113/parkinson/srna/work/seqcluster/cluster
+INFO - Finished
+INFO - It took 26.609 minutes

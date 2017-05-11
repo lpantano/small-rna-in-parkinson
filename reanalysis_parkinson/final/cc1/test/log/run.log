@@ -1,0 +1,14 @@
+INFO-mirtop.libs.logger(15): Run annotation
+INFO-mirtop.libs.logger(433): Reading /repos/mirtop/data/test.sam
+DEBUG-run(16): samtools view -Sbh /repos/mirtop/data/test.sam -o /repos/mirtop/data/test.bam
+DEBUG-mirtop.libs.logger(199): Alignment: [(0, 22)] TTGAAAGGCTATTTCTTGGTCT TTGAAAGGCTATTTCTTGGTCA
+DEBUG-mirtop.libs.logger(242): score seq_244390_x882 hsa-mir-488 21.75
+DEBUG-mirtop.libs.logger(146): coor:52 22 22 72 [14, 34] iso:0	T	[]	[]
+DEBUG-mirtop.libs.logger(155): start > 3 52 22 38 [14, 34] 0	T	cccagataatggcactctcaaacaagtttccaaattgt	[]
+DEBUG-mirtop.libs.logger(187): read:seq_244390_x882 pre:hsa-mir-488 start:52 is_iso:None mir:hsa-miR-488-5p mir_p:[14, 34] mir_s:CCCAGATAATGGCACTCTCAA
+DEBUG-mirtop.libs.logger(146): coor:52 22 22 72 [52, 72] iso:0	T	cccagataatggcactctcaaacaagtttccaaattgt	[]
+DEBUG-mirtop.libs.logger(173): coor end:52 21 72 0 [52, 72] iso:0	T	NA	NA
+DEBUG-mirtop.libs.logger(187): read:seq_244390_x882 pre:hsa-mir-488 start:52 is_iso:True mir:hsa-miR-488-3p mir_p:[52, 72] mir_s:TTGAAAGGCTATTTCTTGGTC
+WARNING-mirtop.libs.logger(466): Sequence index out of range.
+WARNING-mirtop.libs.logger(467): list index out of range
+INFO-mirtop.libs.logger(17): It took 0.004 minutes

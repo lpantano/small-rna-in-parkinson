@@ -1,0 +1,5 @@
+	reads	sample	type
+23	15282323	pc1	aligned
+29	14540678	pc1	cleaned
+57	14540678	pc1	clusters
+104	14417487	pc1	meta-cluster

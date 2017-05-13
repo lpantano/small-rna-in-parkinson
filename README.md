@@ -3,7 +3,7 @@
 
 Scripts and raw data and reanalysis of data related to:
 
-Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson's disease revealed by deep sequencing analysis. Pantano L, Friedländer MR, Escaramís G, Lizano E, Pallarès-Albanell J, Ferrer I, Estivill X, Martí E. Bioinformatics. 2015 Nov 2. pii: btv632. [Epub ahead of print] PMID: 26530722
+[Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson's disease revealed by deep sequencing analysis](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btv632). Pantano L, Friedländer MR, Escaramís G, Lizano E, Pallarès-Albanell J, Ferrer I, Estivill X, Martí E. Bioinformatics. 2015 Nov 2. pii: btv632. [Epub ahead of print] PMID: 26530722
 
 Data is available at: [GSE97285](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97285)
 
